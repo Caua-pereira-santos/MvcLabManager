@@ -2,7 +2,7 @@
 
 
 @{
-    ViewData["Title"] = "Computadores";
+    ViewData["Title"] = "Computers";
 }
 <h1>@ViewData["Title"]</h1>
 
@@ -29,8 +29,10 @@ else
                         <td>@computer.Ram</td>
                         <td>@computer.Processor</td>
                         <td>
-                            <a class = "btn btn-primary btn-sm" 
+                            <a class = "btn btn-info" 
                             href ="/Computer/Show/@computer.Id">Ver</a>
+
+                            <a class = "btn btn-danger" href = "/Computer/Delete/@computer.Id">Delete</a>
                         </td>
                         </tr>
                 }
